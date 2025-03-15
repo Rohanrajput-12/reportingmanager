@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
+use App\Services\CustomService;
+
+
 
 
 /*
@@ -36,6 +39,13 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('role', RoleController::class);
     Route::resource('user', UserController::class);
+
+    Route::get('/test-service', function (CustomService $customService) {
+        return $customService->sayHello();
+    });
+    Route::get('/get-message', function (CustomService $customService) {
+        return $customService->getmessage();
+    });
 
 });
 

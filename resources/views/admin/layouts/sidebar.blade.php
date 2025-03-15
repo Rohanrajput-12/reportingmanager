@@ -36,6 +36,30 @@
                 </a>
               </li>
           </li>
+          <li class="nav-header"><i class="nav-icon fa fa-map-marker-alt m-2"></i>Location</li>
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <p>
+                Country
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <p>
+                State
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <p>
+                City
+              </p>
+            </a>
+          </li>
+
+
           {{-- <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
